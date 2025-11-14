@@ -584,6 +584,18 @@ header {
   filter: saturate(1.05) brightness(0.9);
 }
 
+/* Desktop: show full images (stop vertical cropping) */
+@media (min-width: 861px) {
+  .portfolio-item {
+    min-height: auto;
+  }
+
+  .portfolio-item img {
+    height: auto;
+    object-fit: contain;
+  }
+}
+
 .portfolio-item::after {
   content: "";
   position: absolute;
