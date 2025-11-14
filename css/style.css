@@ -966,25 +966,80 @@ footer {
 /* MOBILE */
 
 @media (max-width: 860px) {
-  .hero-inner {
-    grid-template-columns: minmax(0, 1fr);
-    padding-top: 70px;
+  /* general spacing */
+  section {
+    padding: 56px 0;
   }
 
-  .hero-right {
-    order: -1;
-  }
-
+  /* hero layout */
   #hero {
     min-height: 100vh;
   }
 
-  .about-grid,
-  .contact-grid,
-  .behind-grid {
+  .hero-inner {
+    grid-template-columns: minmax(0, 1fr);
+    padding: 72px 16px 80px;
+    gap: 24px;
+  }
+
+  /* put the thumbnail card above the text on small screens */
+  .hero-right {
+    order: -1;
+  }
+
+  .hero-title {
+    font-size: 34px;
+    letter-spacing: 0.14em;
+  }
+
+  .hero-subtitle {
+    max-width: none;
+  }
+
+  .hero-buttons {
+    justify-content: flex-start;
+  }
+
+  .hero-meta {
+    gap: 8px;
+  }
+
+  /* hero thumbnails */
+  .hero-thumb-strip {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .hero-thumb img {
+    height: 72px;
+  }
+
+  /* cards & grids become one column */
+  #featured .cards,
+  #commissions .cards {
     grid-template-columns: minmax(0, 1fr);
   }
 
+  .portfolio-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .behind-grid,
+  .about-grid,
+  .contact-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+  }
+
+  .contact-grid {
+    align-items: stretch;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* mobile nav */
   .nav-links {
     position: fixed;
     right: 14px;
