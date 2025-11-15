@@ -1052,6 +1052,18 @@ footer {
     align-items: flex-start;
   }
 
+      .about-image {
+    position: static;
+    transform: none;
+    margin: 20px auto 0;
+    width: 240px;
+  }
+
+  .about-image-badge {
+    right: 10px;
+    bottom: 10px;
+  }
+
   /* mobile nav */
   .nav-links {
     position: fixed;
@@ -1078,15 +1090,4 @@ footer {
     display: none;
   }
 
-    .about-image {
-    position: static;
-    transform: none;
-    margin: 20px auto 0;
-    width: 240px;
-  }
-
-  .about-image-badge {
-    right: 10px;
-    bottom: 10px;
-  }
 }
