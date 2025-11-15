@@ -648,55 +648,68 @@ header {
 }
 
 
+/* Layout for the four groups */
+.credits-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 32px;
+  margin-top: 24px;
+}
+
+/* Stack on smaller screens */
+@media (max-width: 1100px) {
+  .credits-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .credits-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* Group title */
+.credits-group-title {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+/* Base list styling */
 .credits-simple {
   list-style: none;
   padding: 0;
-  margin: 24px 0;
-  font-size: 16px;
-  line-height: 1.8;
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.7;
 }
 
 .credits-simple li {
-  margin-bottom: 6px;
-  border-left: 2px solid var(--accent-cyan); /* colored line on the left */
-  padding-left: 12px;
+  margin-bottom: 4px;
+  padding-left: 10px;
+  border-left: 2px solid var(--accent-cyan);
 }
 
+/* Name + role basics */
 .credit-name {
   font-weight: 600;
-  color: var(--accent-cyan);   /* name = cyan accent */
 }
 
 .credit-role {
-  color: var(--text-muted);    /* role = softer gray */
-}
-
-.credit-role.supporter {
-  color: #1ec8ff; /* cyan */
-}
-
-.credit-role.builder {
-  color: #ffb61e; /* gold */
-}
-
-.credit-role.programmer {
-  color: #ff4f81; /* pink/red */
-}
-
-.credit-role.creator {
-  color: #8e6bff; /* purple */
-}
-
-.credit-role.team {
-  color: #4dff7a; /* green */
-}
-
-.credits-note {
-  margin-top: 12px;
-  font-size: 13px;
   color: var(--text-muted);
 }
 
+/* Role-specific text colors (optional, you already have these) */
+.credit-role-supporter  { color: #1ec8ff; }
+.credit-role-builder    { color: #ffb61e; }
+.credit-role-programmer { color: #ff4f81; }
+.credit-role-creator    { color: #8e6bff; }
+.credit-role-team       { color: #4dff7a; }
+
+/* Creators */
 .credits-creators li {
     border-left-color: #ff6e9c;
 }
@@ -728,23 +741,6 @@ header {
     color: #40e0ff;
 }
 
-
-/*.credits-columns {
-  column-count: 4;
-  column-gap: 48px;
-}
-
-@media (max-width: 1000px) {
-  .credits-columns {
-    column-count: 2;
-  }
-}
-
-@media (max-width: 650px) {
-  .credits-columns {
-    column-count: 1;
-  }
-}
 */
 
 /* ABOUT */
