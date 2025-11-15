@@ -641,65 +641,34 @@ header {
 
 /* --- COMMUNITY / CREDITS SECTION --- */
 
-.credits-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
-  gap: 32px;
-  margin-top: 32px;
-  align-items: flex-start;
-}
-
-.credits-card {
-  background: rgba(8, 11, 18, 0.98);
-  border-radius: var(--radius-xl);
-  border: 1px solid var(--border-soft);
-  box-shadow: var(--shadow-soft);
-  padding: 22px 24px 20px;
-}
-
-.credits-title {
-  font-size: 18px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
-
-.credits-intro {
-  font-size: 14px;
-  color: var(--text-muted);
-  margin-bottom: 18px;
-}
-
-.credits-list {
+.credits-simple {
   list-style: none;
   padding: 0;
-  margin: 0 0 16px 0;
+  margin: 24px 0;
+  font-size: 16px;
+  line-height: 1.8;
 }
 
-.credits-list li {
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
-  margin-bottom: 10px;
+.credits-simple li {
+  margin-bottom: 6px;
+  border-left: 2px solid var(--accent-cyan);
+  padding-left: 12px;
 }
 
-.credit-label {
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
+.credit-name {
+  font-weight: 600;
+  color: #fff;
+}
+
+.credit-role {
   color: var(--text-muted);
-}
-
-.credit-names {
-  font-size: 14px;
 }
 
 .credits-note {
-  font-size: 12px;
+  margin-top: 12px;
+  font-size: 13px;
   color: var(--text-muted);
-  margin-top: 8px;
 }
-
 /* ABOUT */
 
 
