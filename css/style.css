@@ -697,6 +697,26 @@ header {
   color: var(--text-muted);
 }
 
+/* Creators */
+.credits-creators li {
+  border-left-color: #ff6e9c;
+}
+  
+/* Bakery builders */
+.credits-bakery li {
+  border-left-color: #7bffb0;
+}
+
+/* Ish builders */
+.credits-ish li {
+  border-left-color: #ffc857;
+}
+
+/* Supporters */
+.credits-supporters li {
+  border-left-color: #40e0ff;
+}
+
 .credits-columns {
   column-count: 3;
   column-gap: 48px;
