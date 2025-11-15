@@ -1,29 +1,3 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const reveals = document.querySelectorAll('.reveal');
-
-  if (!('IntersectionObserver' in window)) {
-    // Fallback: just show everything if browser is ancient
-    reveals.forEach(el => el.classList.add('visible'));
-    return;
-  }
-
-  const observer = new IntersectionObserver(
-    (entries, obs) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          obs.unobserve(entry.target);
-        }
-      });
-    },
-    {
-      threshold: 0.15
-    }
-  );
-
-  reveals.forEach(el => observer.observe(el));
-});
-
 
 // Mobile nav toggle
 const navToggle = document.querySelector('.nav-toggle');
@@ -39,21 +13,6 @@ if (navToggle && navLinks) {
     a.addEventListener('click', () => navLinks.classList.remove('open'));
   });
 }
-
-<script>
-  const reveals = document.querySelectorAll('.reveal');
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.15 });
-
-  reveals.forEach(el => observer.observe(el));
-</script>
-
 
 // Hero slideshow
 const slides = document.querySelectorAll('.hero-slide');
