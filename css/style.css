@@ -762,7 +762,7 @@ header {
 
 .about-image {
   position: absolute;
-  right: 240px;      /* how far he sticks out to the right */
+  right: 100px;      /* how far he sticks out to the right */
   bottom: 0px;     /* how far he overlaps into the next section */
   width: 1050px;      /* overall size of Looof */
   transform: none;   /* no vertical centering anymore */
