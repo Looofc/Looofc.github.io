@@ -71,33 +71,34 @@ if (yearSpan) {
 
 // render credits from credits-data.js
 function renderCredits() {
-  if (typeof creditsData === "undefined") return;
+  if (!window.creditsData) return;
 
   const groups = [
-    { key: "supporters", el: "credits-supporters", roleClass: "credit-role-supporter" },
-    { key: "ishBuilders", el: "credits-ish",       roleClass: "credit-role-builder" },
-    { key: "creators",   el: "credits-creators",   roleClass: "credit-role-creator" },
-    { key: "bakery",     el: "credits-bakery",     roleClass: "credit-role-builder" }
+    { key: "supporters", el: "credits-supporters" },
+    { key: "ishBuilders", el: "credits-ish" },
+    { key: "creators", el: "credits-creators" },
+    { key: "bakery", el: "credits-bakery" }
   ];
 
   groups.forEach(group => {
     const ul = document.getElementById(group.el);
     if (!ul) return;
 
-    // sort alphabetically by name
-    const people = [...creditsData[group.key]].sort((a, b) =>
-      a.name.localeCompare(b.name));
+    // sort by name
+    const entries = [...creditsData[group.key]].sort((a, b) =>
+      a.name.localeCompare(b.name)
+    );
 
-    people.forEach(p => {
+    entries.forEach(person => {
       const li = document.createElement("li");
       li.innerHTML =
-        `<span class="credit-name">${p.name}</span> — ` +
-        `<span class="credit-role ${group.roleClass}">${p.role}</span>`;
+        `<span class="credit-name">${person.name}</span> — ` +
+        `<span class="credit-role credit-role-${person.type}">${person.role}</span>`;
+
       ul.appendChild(li);
     });
   });
 }
 
 document.addEventListener("DOMContentLoaded", renderCredits);
-
 
