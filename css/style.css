@@ -697,27 +697,39 @@ header {
   color: var(--text-muted);
 }
 
-/* Creators */
 .credits-creators li {
-  border-left-color: #ff6e9c;
+    border-left-color: #ff6e9c;
+}
+.credits-creators .credit-name {
+    color: #ff6e9c;
 }
   
 /* Bakery builders */
 .credits-bakery li {
-  border-left-color: #7bffb0;
+    border-left-color: #f7bfb0;
+}
+.credits-bakery .credit-name {
+    color: #f7bfb0;
 }
 
 /* Ish builders */
 .credits-ish li {
-  border-left-color: #ffc857;
+    border-left-color: #ffc857;
+}
+.credits-ish .credit-name {
+    color: #ffc857;
 }
 
 /* Supporters */
 .credits-supporters li {
-  border-left-color: #40e0ff;
+    border-left-color: #40e0ff;
+}
+.credits-supporters .credit-name {
+    color: #40e0ff;
 }
 
-.credits-columns {
+
+/*.credits-columns {
   column-count: 4;
   column-gap: 48px;
 }
@@ -733,6 +745,7 @@ header {
     column-count: 1;
   }
 }
+*/
 
 /* ABOUT */
 
