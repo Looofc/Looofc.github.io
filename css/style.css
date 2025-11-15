@@ -641,6 +641,13 @@ header {
 
 /* --- COMMUNITY / CREDITS SECTION --- */
 
+#credits {
+  background: radial-gradient(circle at top left, rgba(0, 200, 170, 0.12), rgba(5, 7, 10, 0.96));
+  border-top: 1px solid var(--border-soft);
+  border-bottom: 1px solid var(--border-soft);
+}
+
+
 .credits-simple {
   list-style: none;
   padding: 0;
