@@ -680,10 +680,15 @@ header {
 
 /* ABOUT */
 
+
 #about {
   background: radial-gradient(circle at top left, rgba(255, 179, 71, 0.08), rgba(5, 7, 10, 0.95));
   border-top: 1px solid var(--border-soft);
   border-bottom: 1px solid var(--border-soft);
+}
+
+.position-relative {
+  position: relative;
 }
 
 .about-grid {
@@ -769,13 +774,13 @@ header {
 
 .about-image-badge {
   position: absolute;
-  right: 16px;
-  bottom: 16px;
+  right: 20px;
+  bottom: -10px;
   background: rgba(5, 7, 10, 0.85);
-  padding: 8px 12px;
+  padding: 6px 14px;
   border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  font-size: 11px;
+  font-size: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .about-gif {
@@ -1071,5 +1076,17 @@ footer {
 
   .nav-cta {
     display: none;
+  }
+
+    .about-image {
+    position: static;
+    transform: none;
+    margin: 20px auto 0;
+    width: 240px;
+  }
+
+  .about-image-badge {
+    right: 10px;
+    bottom: 10px;
   }
 }
