@@ -651,17 +651,17 @@ header {
 
 .credits-simple li {
   margin-bottom: 6px;
-  border-left: 2px solid var(--accent-cyan);
+  border-left: 2px solid var(--accent-cyan); /* colored line on the left */
   padding-left: 12px;
 }
 
 .credit-name {
   font-weight: 600;
-  color: #fff;
+  color: var(--accent-cyan);   /* name = cyan accent */
 }
 
 .credit-role {
-  color: var(--text-muted);
+  color: var(--text-muted);    /* role = softer gray */
 }
 
 .credits-note {
