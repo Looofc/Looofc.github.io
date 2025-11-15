@@ -759,13 +759,12 @@ header {
 }
 
 .about-image {
-  border-radius: var(--radius-xl);
-  overflow: hidden;
-  border: 1px solid var(--border-soft);
-  box-shadow: var(--shadow-soft);
-  position: relative;
-  max-width: 360px;   /* NEW */
-  margin: 0 auto;     /* NEW - centers the GIF */
+  position: absolute;
+  top: 50%;
+  right: -40px; /* pushes it slightly outside page */
+  transform: translateY(-50%);
+  width: 360px;
+  pointer-events: none; /* so hovering doesn't break */
 }
 
 .about-image-badge {
@@ -778,11 +777,11 @@ header {
   border: 1px solid rgba(255, 255, 255, 0.2);
   font-size: 11px;
 }
+
 .about-gif {
   width: 100%;
   height: auto;
   display: block;
-  object-fit: cover;
 }
 
 
