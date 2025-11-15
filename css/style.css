@@ -685,10 +685,7 @@ header {
   background: radial-gradient(circle at top left, rgba(255, 179, 71, 0.08), rgba(5, 7, 10, 0.95));
   border-top: 1px solid var(--border-soft);
   border-bottom: 1px solid var(--border-soft);
-}
-
-.position-relative {
-  position: relative;
+  position: relative;          /* 👈 NEW: About section is the anchor */
 }
 
 .about-grid {
