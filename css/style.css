@@ -762,22 +762,24 @@ header {
 
 .about-image {
   position: absolute;
-  right: 240px;      /* how far he sticks out to the right */
-  bottom: 20px;     /* how far he overlaps into the next section */
-  width: 900px;      /* overall size of Looof */
+  right: 180px;      /* how far he sticks out to the right */
+  bottom: 25px;     /* how far he overlaps into the next section */
+  width: 1050px;      /* overall size of Looof */
   transform: none;   /* no vertical centering anymore */
   pointer-events: none; /* so hovering doesn't break */
 }
 
 .about-image-badge {
   position: absolute;
-  right: 20px;
-  bottom: -10px;
+  bottom: -10px;     /* sits just below the feet */
+  left: 50%;
+  transform: translateX(-50%);
   background: rgba(5, 7, 10, 0.85);
   padding: 6px 14px;
-  border-radius: 999px;
   font-size: 12px;
+  border-radius: 999px;
   border: 1px solid rgba(255, 255, 255, 0.15);
+  white-space: nowrap;
 }
 
 .about-gif {
