@@ -639,43 +639,65 @@ header {
   justify-content: center;
 }
 
-/* BEHIND THE BLOCKS */
+/* --- COMMUNITY / CREDITS SECTION --- */
 
-#behind {
-  border-top: 1px solid var(--border-soft);
-  border-bottom: 1px solid var(--border-soft);
-  background: radial-gradient(circle at top left, rgba(56, 232, 214, 0.08), rgba(5, 7, 10, 0.95));
-}
-
-.behind-grid {
+.credits-grid {
   display: grid;
   grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
   gap: 32px;
   margin-top: 32px;
-  align-items: center;
+  align-items: flex-start;
 }
 
-.behind-video {
+.credits-card {
+  background: rgba(8, 11, 18, 0.98);
   border-radius: var(--radius-xl);
-  overflow: hidden;
   border: 1px solid var(--border-soft);
   box-shadow: var(--shadow-soft);
+  padding: 22px 24px 20px;
 }
 
-.behind-note {
-  font-size: 13px;
+.credits-title {
+  font-size: 18px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.credits-intro {
+  font-size: 14px;
   color: var(--text-muted);
-  margin-top: 10px;
+  margin-bottom: 18px;
 }
 
-.behind-steps {
-  font-size: 13px;
-  margin-top: 10px;
+.credits-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 16px 0;
 }
 
-.behind-steps ol {
-  margin-left: 18px;
-  margin-top: 6px;
+.credits-list li {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-bottom: 10px;
+}
+
+.credit-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--text-muted);
+}
+
+.credit-names {
+  font-size: 14px;
+}
+
+.credits-note {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 8px;
 }
 
 /* ABOUT */
@@ -1035,7 +1057,9 @@ footer {
     grid-template-columns: minmax(0, 1fr);
   }
 
-  .behind-grid,
+    .credits-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
   .about-grid,
   .contact-grid {
     grid-template-columns: minmax(0, 1fr);
