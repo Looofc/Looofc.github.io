@@ -676,6 +676,24 @@ header {
   font-size: 13px;
   color: var(--text-muted);
 }
+
+.credits-columns {
+  column-count: 3;
+  column-gap: 48px;
+}
+
+@media (max-width: 1000px) {
+  .credits-columns {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 650px) {
+  .credits-columns {
+    column-count: 1;
+  }
+}
+
 /* ABOUT */
 
 
