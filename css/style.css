@@ -762,10 +762,10 @@ header {
 
 .about-image {
   position: absolute;
-  top: 50%;
-  right: -40px; /* pushes it slightly outside page */
-  transform: translateY(-50%);
-  width: 360px;
+  right: -80px;      /* how far he sticks out to the right */
+  bottom: -40px;     /* how far he overlaps into the next section */
+  transform: none;   /* no vertical centering anymore */
+  width: 520px;      /* overall size of Looof */
   pointer-events: none; /* so hovering doesn't break */
 }
 
