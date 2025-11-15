@@ -671,6 +671,26 @@ header {
   color: var(--text-muted);    /* role = softer gray */
 }
 
+.credit-role.supporter {
+  color: #1ec8ff; /* cyan */
+}
+
+.credit-role.builder {
+  color: #ffb61e; /* gold */
+}
+
+.credit-role.programmer {
+  color: #ff4f81; /* pink/red */
+}
+
+.credit-role.creator {
+  color: #8e6bff; /* purple */
+}
+
+.credit-role.team {
+  color: #4dff7a; /* green */
+}
+
 .credits-note {
   margin-top: 12px;
   font-size: 13px;
