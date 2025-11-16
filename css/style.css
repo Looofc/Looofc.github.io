@@ -1044,6 +1044,17 @@ footer {
     padding: 56px 0;
   }
 
+  /* Slightly smaller top padding for About on mobile so the GIF + card feel tighter */
+  #about {
+    padding-top: 48px;
+    padding-bottom: 96px;
+  }
+
+    .filter-btn {
+    padding: 9px 16px;
+    font-size: 12px;
+  }
+
   /* hero layout */
   #hero {
     min-height: 100vh;
