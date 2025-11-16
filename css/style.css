@@ -742,12 +742,12 @@ header {
 
 /* ABOUT */
 
-
 #about {
   background: radial-gradient(circle at top left, rgba(255, 179, 71, 0.08), rgba(5, 7, 10, 0.95));
   border-top: 1px solid var(--border-soft);
   border-bottom: 1px solid var(--border-soft);
-  position: relative;          /* 👈 NEW: About section is the anchor */
+  position: relative;       /* anchor for the waving character */
+  padding-bottom: 140px;    /* extra room so the GIF doesn’t overlap next section */
 }
 
 .about-grid {
@@ -822,18 +822,18 @@ header {
   margin-left: 18px;
 }
 
+/* WAVING CHARACTER */
 .about-image {
   position: absolute;
-  right: 100px;      /* how far he sticks out to the right */
-  bottom: 0px;     /* how far he overlaps into the next section */
-  width: 1050px;      /* overall size of Looof */
-  transform: none;   /* no vertical centering anymore */
-  pointer-events: none; /* so hovering doesn't break */
+  bottom: 0;                         /* touch bottom of About section */
+  right: max(40px, 5%);              /* responsive inset from right edge */
+  width: min(420px, 40vw);           /* responsive scale on large screens */
+  pointer-events: none;              /* no interaction issues */
 }
 
 .about-image-badge {
   position: absolute;
-  bottom: -10px;     /* sits just below the feet */
+  bottom: -10px;                     /* just below feet */
   left: 50%;
   transform: translateX(-50%);
   background: rgba(5, 7, 10, 0.85);
@@ -849,7 +849,6 @@ header {
   height: auto;
   display: block;
 }
-
 
 /* COMMISSIONS */
 
@@ -1100,7 +1099,7 @@ footer {
     .credits-grid {
     grid-template-columns: minmax(0, 1fr);
   }
-  .about-grid,
+   .about-grid,
   .contact-grid {
     grid-template-columns: minmax(0, 1fr);
     gap: 24px;
@@ -1115,16 +1114,18 @@ footer {
     align-items: flex-start;
   }
 
-      .about-image {
+  /* Mobile: character sits inside flow under the card */
+  .about-image {
     position: static;
     transform: none;
     margin: 20px auto 0;
-    width: 240px;
+    width: 220px;
   }
 
   .about-image-badge {
-    right: 10px;
-    bottom: 10px;
+    position: static;
+    transform: none;
+    margin-top: 8px;
   }
 
   /* mobile nav */
