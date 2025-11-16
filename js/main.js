@@ -82,12 +82,14 @@ function renderCredits() {
 
   groups.forEach(group => {
     const ul = document.getElementById(group.el);
-    if (!ul) return;
+    const data = window.creditsData[group.key];
 
-    // sort by name
-    const entries = [...creditsData[group.key]].sort((a, b) =>
-      a.name.localeCompare(b.name)
-    );
+    if (!ul || !Array.isArray(data)) return;
+
+    // Alphabetical sort by name (case-insensitive)
+    const entries = data
+      .slice()
+      .sort((a, b) => a.name.localeCompare(b.name, undefined, { sensitivity: "base" }));
 
     entries.forEach(person => {
       const li = document.createElement("li");
@@ -101,4 +103,3 @@ function renderCredits() {
 }
 
 document.addEventListener("DOMContentLoaded", renderCredits);
-
