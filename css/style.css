@@ -647,7 +647,6 @@ header {
   border-bottom: 1px solid var(--border-soft);
 }
 
-
 /* Layout for the four groups */
 .credits-grid {
   display: grid;
@@ -702,7 +701,7 @@ header {
   color: var(--text-muted);
 }
 
-/* Role-specific text colors (optional, you already have these) */
+/* Role-specific text colors */
 .credit-role-supporter  { color: #1ec8ff; }
 .credit-role-builder    { color: #ffb61e; }
 .credit-role-programmer { color: #ff4f81; }
@@ -711,37 +710,35 @@ header {
 
 /* Creators */
 .credits-creators li {
-    border-left-color: #ff6e9c;
+  border-left-color: #ff6e9c;
 }
 .credits-creators .credit-name {
-    color: #ff6e9c;
+  color: #ff6e9c;
 }
-  
+
 /* Bakery builders */
 .credits-bakery li {
-    border-left-color: #f7bfb0;
+  border-left-color: #f7bfb0;
 }
 .credits-bakery .credit-name {
-    color: #f7bfb0;
+  color: #f7bfb0;
 }
 
 /* Ish builders */
 .credits-ish li {
-    border-left-color: #ffc857;
+  border-left-color: #ffc857;
 }
 .credits-ish .credit-name {
-    color: #ffc857;
+  color: #ffc857;
 }
 
 /* Supporters */
 .credits-supporters li {
-    border-left-color: #40e0ff;
+  border-left-color: #40e0ff;
 }
 .credits-supporters .credit-name {
-    color: #40e0ff;
+  color: #40e0ff;
 }
-
-*/
 
 /* ABOUT */
 
