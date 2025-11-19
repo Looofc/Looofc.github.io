@@ -746,8 +746,8 @@ header {
   background: radial-gradient(circle at top left, rgba(255, 179, 71, 0.08), rgba(5, 7, 10, 0.95));
   border-top: 1px solid var(--border-soft);
   border-bottom: 1px solid var(--border-soft);
-  position: relative;       /* anchor for the waving character */
-  padding-bottom: 140px;    /* extra room so the GIF doesn’t overlap next section */
+  position: relative;        /* anchor for the waving character */
+  padding-bottom: 130px;     /* room for the GIF sitting on the bottom edge */
 }
 
 .about-grid {
@@ -822,22 +822,24 @@ header {
   margin-left: 18px;
 }
 
-/* WAVING CHARACTER */
+/* WAVING CHARACTER – desktop */
 .about-image {
   position: absolute;
-  bottom: 0;                         /* touch bottom of About section */
-  right: max(40px, 5%);              /* responsive inset from right edge */
-  width: min(420px, 40vw);           /* responsive scale on large screens */
-  pointer-events: none;              /* no interaction issues */
+  bottom: 0;                          /* touches the bottom of the ABOUT section */
+  right: 0;
+  /* move left so he sits roughly in the middle between card edge and page edge */
+  transform: translateX(-35%);
+  width: min(700px, 55vw);            /* bigger again, but responsive */
+  pointer-events: none;
 }
 
 .about-image-badge {
   position: absolute;
-  bottom: -10px;                     /* just below feet */
+  bottom: -14px;
   left: 50%;
   transform: translateX(-50%);
-  background: rgba(5, 7, 10, 0.85);
-  padding: 6px 14px;
+  background: rgba(5, 7, 10, 0.9);
+  padding: 6px 16px;
   font-size: 12px;
   border-radius: 999px;
   border: 1px solid rgba(255, 255, 255, 0.15);
@@ -849,6 +851,7 @@ header {
   height: auto;
   display: block;
 }
+
 
 /* COMMISSIONS */
 
