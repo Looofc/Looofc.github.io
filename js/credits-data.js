@@ -3,16 +3,16 @@ window.creditsData = {
 supporters: [
     { name: "Angel",         role: "Goonkage",              type: "supporter" },
     { name: "AshThePeanut",  role: "Supporter",             type: "supporter" },
-    { name: "Berry",         role: "Fortsycord",             type: "supporter" },
+    { name: "Berry",         role: "Fortsycord",             type: "builder" },
     { name: "Chinu",         role: "Supporter",             type: "supporter" },
     { name: "Field",         role: "Goat",                  type: "creator" },
     { name: "Glocax",        role: "Programmer / Projects", type: "programmer" },
-    { name: "Itsmara",       role: "Fortsycord",             type: "supporter" },
-    { name: "Jeneko",        role: "Fortsycord",             type: "supporter" },
+    { name: "Itsmara",       role: "Fortsycord",             type: "builder" },
+    { name: "Jeneko",        role: "Fortsycord",             type: "builder" },
     { name: "Luxxy",         role: "Supporter",             type: "supporter" },
     { name: "Plutonics",     role: "Supporter",             type: "supporter" },
-    { name: "Skeletism",     role: "Fortsycord",             type: "supporter" },
-    { name: "Theoooki",      role: "Fortsycord",             type: "supporter" },  
+    { name: "Skeletism",     role: "Fortsycord",             type: "builder" },
+    { name: "Theoooki",      role: "Fortsycord",             type: "builder" },  
   ],
 
   ishBuilders: [
