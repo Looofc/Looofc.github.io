@@ -4,11 +4,12 @@ supporters: [
     { name: "Angel",         role: "Goonkage",            type: "supporter" },
     { name: "AshThePeanut",  role: "Supporter",           type: "supporter" },
     { name: "Chinu",         role: "Supporter",           type: "supporter" },
-    { name: "Field",         role: "Goat",                type: "supporter" },
+    { name: "Field",         role: "Goat",                type: "creator" },
     { name: "Glocax",        role: "Programmer / Projects", type: "programmer" },
     { name: "Luxxy",         role: "Supporter",           type: "supporter" },
     { name: "Plutonics",     role: "Supporter",           type: "supporter" },
-    { name: "Skeletism",     role: "Skeleton",            type: "supporter" },  
+    { name: "Skeletism",     role: "Skeleton",            type: "supporter" },
+    { name: "Theoooki",     role: "Supporter",            type: "supporter" },  
   ],
 
   ishBuilders: [
