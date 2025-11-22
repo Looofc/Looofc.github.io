@@ -1,9 +1,10 @@
 // Expose creditsData on window so main.js can read it
 window.creditsData = {
-  supporters: [
      supporters: [
+    { name: "Angel",         role: "Goonkage",            type: "supporter" },
     { name: "AshThePeanut",  role: "Supporter",           type: "supporter" },
     { name: "Chinu",         role: "Supporter",           type: "supporter" },
+    { name: "Field",         role: "Goat",                type: "supporter" },
     { name: "Glocax",        role: "Programmer / Projects", type: "programmer" },
     { name: "Luxxy",         role: "Supporter",           type: "supporter" },
     { name: "Plutonics",     role: "Supporter",           type: "supporter" }
