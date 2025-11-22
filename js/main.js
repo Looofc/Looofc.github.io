@@ -103,3 +103,10 @@ function renderCredits() {
 }
 
 document.addEventListener("DOMContentLoaded", renderCredits);
+
+document.addEventListener("click", () => {
+  const audio = document.getElementById("bg-music");
+  audio.volume = 0.4;
+  audio.play().catch(() => {});
+}, { once: true });
+
