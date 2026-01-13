@@ -7,7 +7,7 @@ supporters: [
     { name: "Chinu",         role: "Supporter",              type: "supporter" },
     { name: "Field",         role: "Goat",                   type: "creator" },
     { name: "Glocax",        role: "Programmer / Projects",  type: "programmer" },
-    { name: "Gurt",         role: "Fortsycord",             type: "builder" }, 
+    { name: "Gurt",          role: "Fortsycord",             type: "builder" }, 
     { name: "Idle",          role: "Fortsycord",             type: "builder" }, 
     { name: "Iamaghost",     role: "Supporter",              type: "supporter" }, 
     { name: "Illia",         role: "Fortsycord",             type: "builder" }, 
