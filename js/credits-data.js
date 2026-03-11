@@ -40,13 +40,13 @@ supporters: [
   ],
 
   creators: [
-    { name: "BreadleyYourHero", role: "Creator / Builder", type: "creator" },
-    { name: "Ish", role: "Creator / Events", type: "creator" },
-    { name: "Jawunleashed", role: "Creator / Projects", type: "creator" },
-    { name: "Shovel", role: "Creator / Builder", type: "creator" },
-    { name: "Stan616", role: "Creator / Builder", type: "creator" },
-    { name: "Vahaan", role: "Creator / Builder", type: "creator" },
-    { name: "Xknighty", role: "Creator / Builder", type: "creator" }
+    { name: "BreadleyYourHero", role: "Creator / Builder", type: "creator", url: "https://youtube.com/@breadleyyourhero" },
+    { name: "Ish", role: "Creator / Events", type: "creator", url: "https://youtube.com/@ish" },
+    { name: "Jawunleashed", role: "Creator / Projects", type: "creator", url: "https://youtube.com/@jawunleashed" },
+    { name: "Shovel241", role: "Creator / Builder", type: "creator", url: "https://youtube.com/@shovel241" },
+    { name: "Stan616", role: "Creator / Builder", type: "creator", url: "https://youtube.com/@stan616" },
+    { name: "Vahaan", role: "Creator / Builder", type: "creator", url: "https://youtube.com/@vahaan7256" },
+    { name: "Xknighty", role: "Creator / Builder", type: "creator", url: "https://youtube.com/@knightybuilds" }
   ],
 
   bakery: [
