@@ -103,24 +103,29 @@ function renderCredits() {
     { key: "bakery", el: "credits-bakery" }
   ];
 
-  groups.forEach(group => {
+ groups.forEach(group => {
     const ul = document.getElementById(group.el);
-    const data = window.creditsData[group.key];
+    if (!ul) return;
 
-    if (!ul || !Array.isArray(data)) return;
+    ul.innerHTML = "";
 
-    // Alphabetical sort by name (case-insensitive)
-    const entries = data
-      .slice()
-      .sort((a, b) => a.name.localeCompare(b.name, undefined, { sensitivity: "base" }));
+    const entries = [...creditsData[group.key]].sort((a, b) =>
+      a.name.localeCompare(b.name)
+    );
 
     entries.forEach(person => {
       const li = document.createElement("li");
+
+      const nameHtml = person.url
+        ? `<a class="credit-name credit-link" href="${person.url}" target="_blank" rel="noopener noreferrer">${person.name}</a>`
+        : `<span class="credit-name">${person.name}</span>`;
+
       li.innerHTML =
-        `<span class="credit-name">${person.name}</span> — ` +
+        `${nameHtml} — ` +
         `<span class="credit-role credit-role-${person.type}">${person.role}</span>`;
 
       ul.appendChild(li);
+      
     });
   });
 }
