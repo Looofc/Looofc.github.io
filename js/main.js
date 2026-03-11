@@ -83,7 +83,7 @@ if (copyDiscordBtn) {
     } catch (err) {
       copyDiscordBtn.textContent = "Copy failed";
       setTimeout(() => {
-        copyDiscordBtn.textContent = "Discord: Looof";
+        copyDiscordBtn.textContent = "Looof";
       }, 1400);
     }
   });
