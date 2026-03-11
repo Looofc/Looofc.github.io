@@ -69,6 +69,29 @@ if (yearSpan) {
   yearSpan.textContent = new Date().getFullYear();
 }
 
+const copyDiscordBtn = document.getElementById("copy-discord-btn");
+
+if (copyDiscordBtn) {
+  copyDiscordBtn.addEventListener("click", async () => {
+    try {
+      await navigator.clipboard.writeText("Looof");
+      const originalText = copyDiscordBtn.textContent;
+      copyDiscordBtn.textContent = "Discord copied!";
+      setTimeout(() => {
+        copyDiscordBtn.textContent = originalText;
+      }, 1400);
+    } catch (err) {
+      copyDiscordBtn.textContent = "Copy failed";
+      setTimeout(() => {
+        copyDiscordBtn.textContent = "Discord: Looof";
+      }, 1400);
+    }
+  });
+}
+
+
+
+
 // render credits from credits-data.js
 function renderCredits() {
   if (!window.creditsData) return;
