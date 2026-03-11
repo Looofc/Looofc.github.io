@@ -502,37 +502,39 @@
     </p>
 
     <div class="contact-grid">
-      <form class="contact-card" onsubmit="event.preventDefault(); alert('This is a static demo — hook this form up to your email/service.');">
-        <label for="name">Name</label>
-        <input id="name" type="text" placeholder="Your name or organization" required />
+      <form class="contact-card" action="https://formspree.io/f/xyknwzak" method="POST">
+       <label for="name">Name</label>
+  <input id="name" name="name" type="text" placeholder="Your name or organization" required />
 
-        <label for="contact-info">Email / Discord</label>
-        <input id="contact-info" type="text" placeholder="example@email.com · username" required />
+  <label for="contact-info">Email / Discord</label>
+  <input id="contact-info" name="contact" type="text" placeholder="example@email.com · username" required />
 
-        <label for="project-type">Project type</label>
-        <select id="project-type">
-          <option>Character / statue</option>
-          <option>World / megastructure</option>
-          <option>Diorama / cinematic scene</option>
-          <option>Other / not sure yet</option>
-        </select>
+  <label for="project-type">Project type</label>
+  <select id="project-type" name="project_type">
+    <option>Character / statue</option>
+    <option>World / megastructure</option>
+    <option>Diorama / cinematic scene</option>
+    <option>Other / not sure yet</option>
+  </select>
 
-        <label for="budget">Budget (optional)</label>
-        <input id="budget" type="text" placeholder="Rough range in USD" />
+  <label for="budget">Budget (optional)</label>
+  <input id="budget" name="budget" type="text" placeholder="Rough range in USD" />
 
-        <label for="timeline">Timeline (optional)</label>
-        <input id="timeline" type="text" placeholder="E.g. end of next month" />
+  <label for="timeline">Timeline (optional)</label>
+  <input id="timeline" name="timeline" type="text" placeholder="E.g. end of next month" />
 
-        <label for="details">Project details</label>
-        <textarea id="details" placeholder="Tell me about the setting, mood, scale, and how the build will be used." required></textarea>
+  <label for="details">Project details</label>
+  <textarea id="details" name="details" placeholder="Tell me about the setting, mood, scale, and how the build will be used." required></textarea>
 
-        <button class="btn-primary" type="submit" style="margin-top:4px;">Send request</button>
+  <button class="btn-primary" type="submit" style="margin-top:4px;">Send request</button>
 
-        <p class="contact-note">
-          I usually respond within 24–48 hours. Serious commercial inquiries only, please.
-        </p>
-      </form>
-
+  <p class="contact-note">
+    I usually respond within 24–48 hours. Serious commercial inquiries only, please.
+  </p>
+</form>
+<p class="contact-note">
+  For the first message, just send the brief here. Once I reply, you can send screenshots, moodboards, and references through Discord or email.
+</p>
       <div class="contact-side">
         <p>
           <strong>What helps most:</strong>
@@ -546,7 +548,8 @@
         <div class="contact-links">
           <p><strong>Direct contact</strong>:</p>
           <div class="contact-tag">Discord: Looof</div>
-          <div class="contact-tag">Email: ... </div>
+          <button class="contact-tag" type="button" onclick="navigator.clipboard.writeText('Looof')">Copy Discord</button>
+          <a class="contact-tag" href="mailto:looofbuilds@gmail.com">Email: looofcy@gmail.com</a>
         </div>
       </div>
     </div>
